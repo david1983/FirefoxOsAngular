@@ -1,0 +1,26 @@
+{
+    "version":"1.0",
+	   "name": "Firefox OS angular",
+    "description": "test app",
+    "launch_path": "/index.html",	  
+    "icons": {       
+        "128": "/img/icon-128.png"
+    },
+	"developer": {
+        "name": "Davide Andreazzini",
+            "url": "http://davideandreazzini.co.uk"
+    },
+    "default_locale": "en",
+	"type": "privileged",
+	"permissions": {
+     "contacts": {
+        "description": "Required for autocompletion in the share screen",
+        "access": "readcreate"
+     },
+        "camera": {
+        "description": "Required for accessing cameras on the device."
+     },
+         "device-storage:videos":{ "access": "readonly" },
+        "device-storage:pictures":{ "access": "readwrite" }
+	}
+}
